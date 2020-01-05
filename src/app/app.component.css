@@ -1,0 +1,17 @@
+.half-circle-right {
+    width: 100px;
+    height: 200px;
+    background-color: gold;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border: 10px solid gray;
+}
+
+.half-circle-left {
+    width: 100px;
+    height: 200px;
+    background-color: gold;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border: 10px solid gray;
+}
