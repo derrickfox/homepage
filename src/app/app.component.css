@@ -4,11 +4,11 @@
     background-color: gold;
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
-    border: 10px solid gray;
+    border: 10px solid purple;
     position: absolute;
-    top: 0px;
-    left: 10px;
-    transform: 'rotate(80deg)';
+    top: 20px;
+    left: 100px;
+    display: inline-block;
 }
 
 .half-circle-left {
@@ -17,15 +17,38 @@
     background-color: gold;
     border-top-left-radius: 110px;
     border-bottom-left-radius: 110px;
-    border: 10px solid gray;
+    border: 10px solid purple;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 0px;
-    transform: 'rotate(-80deg)';
+    display: inline-block;
 }
 
 .relative {
     position: relative;
     width: 400px;
     height: 300px;
+}
+
+.blob.red {
+    background: rgba(255, 82, 82, 1);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
 }
