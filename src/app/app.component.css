@@ -8,6 +8,7 @@
     position: absolute;
     top: 0px;
     left: 10px;
+    transform: 'rotate(80deg)';
 }
 
 .half-circle-left {
@@ -20,6 +21,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    transform: 'rotate(-80deg)';
 }
 
 .relative {

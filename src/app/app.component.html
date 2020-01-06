@@ -1,4 +1,8 @@
 <div class="container">
+	<div class="relative">Relative
+		<div [@leftState]="eggState" (click)="onEgg()" class="half-circle-left">Left</div>
+		<div [@rightState]="eggState" (click)="onEgg()" class="half-circle-right">Right</div>
+	</div>
 	<div class="col-xs-12">
 		<div class="row">
 			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary">A BUTTON</button>
@@ -22,8 +26,5 @@
 	</div>
 </div>
 
-<div class="relative">Relative
-	<div [@rightState]="state" (click)="onEgg()" class="half-circle-right">Right</div>
-	<div [@leftState]="state" (click)="onEgg()" class="half-circle-left">Left</div>
-  </div>
+
 <router-outlet></router-outlet>
