@@ -21,6 +21,9 @@
 		<div [@divState]="state" style="width: 100px; height: 100px; border: 2px solid white;"></div>
 	</div>
 </div>
-<div [@eggState]="state" (click)="onEgg()" class="half-circle-right"></div>
-<div [@eggState]="state" (click)="onEgg()" class="half-circle-left"></div>
+
+<div class="relative">Relative
+	<div [@rightState]="state" (click)="onEgg()" class="half-circle-right">Right</div>
+	<div [@leftState]="state" (click)="onEgg()" class="half-circle-left">Left</div>
+  </div>
 <router-outlet></router-outlet>

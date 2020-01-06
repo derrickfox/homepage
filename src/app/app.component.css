@@ -5,6 +5,9 @@
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
     border: 10px solid gray;
+    position: absolute;
+    top: 0px;
+    left: 10px;
 }
 
 .half-circle-left {
@@ -14,4 +17,13 @@
     border-top-left-radius: 110px;
     border-bottom-left-radius: 110px;
     border: 10px solid gray;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.relative {
+    position: relative;
+    width: 400px;
+    height: 300px;
 }

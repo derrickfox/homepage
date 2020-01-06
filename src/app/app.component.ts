@@ -17,21 +17,30 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 			})),
 			transition('normal <=> highlighted', animate(1300))
 		]),
-		trigger('eggState', [
-			state('unhatched', style({
-				transform: 'translateX(0)'
+		trigger('leftState', [
+			state('normal', style({
+				transform: 'rotate(-20deg)'
 			})),
 			state('hatched', style({
-				transform: 'translateX(1000px)'
+				transform: 'rotate(-45deg)'
 			})),
-			transition('unhatched <=> hatched', animate(300))
+			transition('normal <=> hatched', animate(300))
+		]),
+		trigger('rightState', [
+			state('normal', style({
+				transform: 'rotate(20deg)'
+			})),
+			state('hatched', style({
+				transform: 'rotate(45deg)'
+			})),
+			transition('normal <=> hatched', animate(300))
 		])
 	]
 })
 export class AppComponent {
 	state = 'normal'
 	otherState = 'normal'
-	eggState = 'unhatched'
+	eggState = 'normal'
 	title = 'homepage';
 
 	onAnimate() {
@@ -40,6 +49,6 @@ export class AppComponent {
 
 	onEgg() {
 		console.log('clicked')
-		this.state === 'unhatched' ? this.state = 'hatched' : this.state = 'unhatched';
+		this.state === 'normal' ? this.state = 'hatched' : this.state = 'unhatched';
 	}
 }
