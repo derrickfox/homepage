@@ -2,3 +2,14 @@ body {
     background-image: url('backImage.png'); 
     background-size: cover;
 }
+
+#leftCloud {
+    height: 250px;
+}
+
+#rightCloud {
+    height: 250px;
+    float: right;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

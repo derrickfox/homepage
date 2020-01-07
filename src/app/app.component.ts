@@ -15,7 +15,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 			state('highlighted', style({
 				'background-color': 'blue',
 				'border-color': 'blue',
-				transform: 'translateX(1000px)'
+				transform: 'translateX(500px)'
 			})),
 			transition('normal <=> highlighted', animate(1300))
 		]),
