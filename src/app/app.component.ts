@@ -40,6 +40,24 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 				'background-color': 'pink'
 			})),
 			transition('unhatched <=> hatched', animate(300))
+		]),
+		trigger('leftCloudState', [
+			state('beforeLoading', style({
+				transform: 'translateX(-100px)'
+			})),
+			state('afterLoading', style({
+				transform: 'translateX(100px)'
+			})),
+			transition('beforeLoading => afterLoading', animate(300))
+		]),
+		trigger('rightCloudState', [
+			state('beforeLoading', style({
+				transform: 'translateX(500px)'
+			})),
+			state('afterLoading', style({
+				transform: 'translateX(0)'
+			})),
+			transition('beforeLoading => afterLoading', animate(300))
 		])
 	]
 })
@@ -47,6 +65,7 @@ export class AppComponent {
 	state = 'normal'
 	otherState = 'normal'
 	eggState = 'unhatched'
+	cloudState = 'beforeLoading'
 	title = 'homepage';
 
 	onAnimate() {
@@ -54,7 +73,12 @@ export class AppComponent {
 	}
 
 	onEgg() {
-		console.log('clicked')
+		console.log('egg')
 		this.eggState === 'unhatched' ? this.eggState = 'hatched' : this.eggState = 'unhatched';
+	}
+
+	onClouds() {
+		console.log('cloud')
+		this.cloudState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
 	}
 }

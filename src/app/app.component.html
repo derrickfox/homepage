@@ -30,7 +30,7 @@
 </div>
 
 <div class="blob red"></div>
-<img id="leftCloud">
-<img id="rightCloud">
+<img id="leftCloud" (click)="onClouds()" [@leftCloudState]="cloudState">
+<img id="rightCloud" (click)="onClouds()" [@rightCloudState]="cloudState">
 
 <router-outlet></router-outlet>
