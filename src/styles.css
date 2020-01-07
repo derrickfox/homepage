@@ -5,6 +5,7 @@ body {
 
 #leftCloud {
     height: 250px;
+    content: url('montyClouds.png');
 }
 
 #rightCloud {
@@ -12,4 +13,5 @@ body {
     float: right;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    content: url('montyClouds.png');
 }
