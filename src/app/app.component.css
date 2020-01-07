@@ -7,8 +7,7 @@
     border: 10px solid purple;
     position: absolute;
     top: 20px;
-    left: 100px;
-    display: inline-block;
+    left: -5px;
 }
 
 .half-circle-left {
@@ -20,21 +19,21 @@
     border: 10px solid purple;
     position: absolute;
     top: 20px;
-    left: 0px;
-    display: inline-block;
+    left: -105px;
 }
 
 .relative {
     position: relative;
-    width: 400px;
+    width: auto;
+    align-items: center;
     height: 300px;
 }
 
-.blob.red {
+/* .blob.red {
     background: rgba(255, 82, 82, 1);
     box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
     animation: pulse-red 2s infinite;
-}
+} */
 
 @keyframes pulse-red {
     0% {

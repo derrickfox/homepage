@@ -1,25 +1,29 @@
 <div class="container">
-	<div class="relative" style="text-align: center;">Relative
-		<div [@leftState]="eggState" (click)="onEgg()" class="half-circle-left">Left</div>
-		<div [@rightState]="eggState" (click)="onEgg()" class="half-circle-right">Right</div>
+	<div class="d-flex justify-content-center">
+		<div class="relative">
+			<div [@leftState]="eggState" (click)="onEgg()" class="half-circle-left"></div>
+			<div [@rightState]="eggState" (click)="onEgg()" class="half-circle-right"></div>
+		</div>
 	</div>
+
 	<div class="col-xs-12">
-		<div class="row">
-			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A BUTTON</button>
+		<div class="row justify-content-center">
+			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A
+				BUTTON</button>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
 	</div>
