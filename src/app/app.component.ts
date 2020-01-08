@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 @Component({
@@ -22,7 +22,7 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 		trigger('leftState', [
 			state('unhatched', style({
 				transform: 'rotate(0deg)',
-				'background-color': 'purple'
+				'background-color': 'rgb(193, 166, 18)'
 			})),
 			state('hatched', style({
 				transform: 'rotate(-45deg)',
@@ -33,7 +33,7 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 		trigger('rightState', [
 			state('unhatched', style({
 				transform: 'rotate(0deg)',
-				'background-color': 'purple'
+				'background-color': 'rgb(193, 166, 18)'
 			})),
 			state('hatched', style({
 				transform: 'rotate(45deg)',
@@ -79,7 +79,7 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 		])
 	]
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
 	state = 'normal'
 	otherState = 'normal'
 	eggState = 'unhatched'
@@ -99,4 +99,8 @@ export class AppComponent {
 		console.log('cloud')
 		this.cloudState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
 	}
+
+	ngAfterViewInit() {
+		this.cloudState = 'afterLoading';
+	 }
 }
