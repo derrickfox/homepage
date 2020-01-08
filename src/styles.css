@@ -1,17 +1,33 @@
 body {
-    background-image: url('backImage.png'); 
+    background-image: url('montyBackground.jpg'); 
     background-size: cover;
+    height: 100%;
 }
 
 #leftCloud {
     height: 180px;
-    content: url('montyClouds.png');
+    content: url('montyCloudsLeft.png');
 }
 
 #rightCloud {
     height: 180px;
     float: right;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    content: url('montyClouds.png');
+    content: url('montyCloudsRight.png');
+}
+
+#darkCloudLeft {
+    content: url('darkCloudLeft.png');
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+#darkCloudRight {
+    content: url('darkCloudRight.png');
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    float: right;
 }

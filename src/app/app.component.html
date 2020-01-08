@@ -1,3 +1,6 @@
+<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
+<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
+
 <div class="container">
 	<div class="d-flex justify-content-center">
 		<div class="relative">
@@ -27,10 +30,12 @@
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
 	</div>
+	<div class="relative">
+		<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
+		<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
+	</div>
 </div>
 
 <div class="blob red"></div>
-<img id="leftCloud" (click)="onClouds()" [@leftCloudState]="cloudState">
-<img id="rightCloud" (click)="onClouds()" [@rightCloudState]="cloudState">
 
 <router-outlet></router-outlet>

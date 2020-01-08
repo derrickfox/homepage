@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 @Component({
 	selector: 'app-root',
@@ -41,23 +41,41 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 			})),
 			transition('unhatched <=> hatched', animate(300))
 		]),
-		trigger('leftCloudState', [
+		trigger('leftTopCloudState', [
 			state('beforeLoading', style({
-				transform: 'translateX(-100px)'
+				transform: 'translateX(-200px)'
 			})),
 			state('afterLoading', style({
-				transform: 'translateX(100px)'
+				transform: 'translateX(10px)'
 			})),
-			transition('beforeLoading => afterLoading', animate(300))
+			transition('beforeLoading <=> afterLoading', animate(600))
 		]),
-		trigger('rightCloudState', [
+		trigger('rightTopCloudState', [
 			state('beforeLoading', style({
-				transform: 'translateX(500px)'
+				transform: 'translateX(220px)'
 			})),
 			state('afterLoading', style({
-				transform: 'translateX(0)'
+				transform: 'translateX(-10px)'
 			})),
-			transition('beforeLoading => afterLoading', animate(300))
+			transition('beforeLoading <=> afterLoading', animate(600))
+		]),
+		trigger('leftBottomCloudState', [
+			state('beforeLoading', style({
+				transform: 'translateX(10px)'
+			})),
+			state('afterLoading', style({
+				transform: 'translateX(-200px)'
+			})),
+			transition('beforeLoading <=> afterLoading', animate(600))
+		]),
+		trigger('rightBottomCloudState', [
+			state('beforeLoading', style({
+				transform: 'translateX(-10px)'
+			})),
+			state('afterLoading', style({
+				transform: 'translateX(220px)'
+			})),
+			transition('beforeLoading <=> afterLoading', animate(600))
 		])
 	]
 })
