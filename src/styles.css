@@ -40,28 +40,20 @@ body {
     float: right;
 }
 
-.half-circle-right {
-    width: 100px;
+.half-sun-bottom {
+    /* width: 100px; */
     height: 200px;
     content: url('montySunLower.png');
-    /* background-color: rgb(193, 166, 18);
-    border-top-right-radius: 110px;
-    border-bottom-right-radius: 110px;
-    border: 10px solid rgb(177, 80, 5); */
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 180px;
 }
 
-.half-circle-left {
-    width: 100px;
+.half-sun-top {
+    /* width: 100px; */
     height: 200px;
     content: url('montySunUpper.png');
-    /* background-color: gold;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 110px;
-    border: 10px solid rgb(177, 80, 5); */
     position: absolute;
-    top: 60px;
-    left: 95px;
+    top: 0;
+    left: 180px;
 }
