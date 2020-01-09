@@ -19,25 +19,21 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 			})),
 			transition('normal <=> highlighted', animate(1300))
 		]),
-		trigger('leftState', [
+		trigger('topState', [
 			state('unhatched', style({
-				transform: 'rotate(0deg)',
-				'background-color': 'rgb(193, 166, 18)'
+				transform: 'rotate(0deg)'
 			})),
 			state('hatched', style({
-				transform: 'rotate(-45deg)',
-				'background-color': 'pink'
+				transform: 'rotate(-45deg)'
 			})),
 			transition('normal => hatched', animate(300))
 		]),
-		trigger('rightState', [
+		trigger('bottomState', [
 			state('unhatched', style({
 				transform: 'rotate(0deg)',
-				'background-color': 'rgb(193, 166, 18)'
 			})),
 			state('hatched', style({
-				transform: 'rotate(45deg)',
-				'background-color': 'pink'
+				transform: 'rotate(45deg)'
 			})),
 			transition('unhatched <=> hatched', animate(300))
 		]),

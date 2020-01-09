@@ -1,15 +1,16 @@
-<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
-<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
-
 <div class="container">
+	<img #borderImage>
+	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
+	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
+
 	<div class="d-flex justify-content-center">
 		<div class="relative">
-			<div [@leftState]="eggState" (click)="onEgg()" class="half-circle-left"></div>
-			<div [@rightState]="eggState" (click)="onEgg()" class="half-circle-right"></div>
+			<div [@topState]="eggState" (click)="onEgg()" class="half-circle-left"></div>
+			<div [@bottomState]="eggState" (click)="onEgg()" class="half-circle-right"></div>
 		</div>
 	</div>
 
-	<!-- <div class="col-xs-6">
+	<div class="col-xs-6">
 		<div class="row justify-content-center">
 			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A
 				BUTTON</button>
@@ -29,11 +30,14 @@
 		<div class="row justify-content-center">
 			<button type="button" class="btn btn-primary">A BUTTON</button>
 		</div>
-	</div> -->
-	<div class="relative">
+	</div>
+
+	<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
+	<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
+	<!-- <div class="relative">
 		<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
 		<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
-	</div>
+	</div> -->
 </div>
 
 <div class="blob red"></div>

@@ -3,29 +3,7 @@ button {
     width: 50%;
 }
 
-.half-circle-right {
-    width: 100px;
-    height: 200px;
-    background-color: rgb(193, 166, 18);
-    border-top-right-radius: 110px;
-    border-bottom-right-radius: 110px;
-    border: 10px solid rgb(177, 80, 5);
-    position: absolute;
-    top: 20px;
-    left: -5px;
-}
 
-.half-circle-left {
-    width: 100px;
-    height: 200px;
-    background-color: gold;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 110px;
-    border: 10px solid rgb(177, 80, 5);
-    position: absolute;
-    top: 20px;
-    left: -105px;
-}
 
 .relative {
     position: relative;
