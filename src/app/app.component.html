@@ -1,26 +1,47 @@
 <div class="container">
-	<div class="col-xs-12">
-		<div class="row">
-			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary">A BUTTON</button>
+	<img #borderImage>
+	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
+	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
+
+	<div class="d-flex justify-content-center">
+		<div class="relative">
+			<div [@topState]="eggState" (click)="onEgg()" class="half-sun-bottom"></div>
+			<div [@bottomState]="eggState" (click)="onEgg()" class="half-sun-top"></div>
 		</div>
-		<div class="row">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div [@divState]="state" style="width: 100px; height: 100px; border: 2px solid white;"></div>
 	</div>
+
+	<div class="col-xs-12" id="centerButtons">
+		<div class="row justify-content-center">
+			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A BUTTON</button>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-primary">A BUTTON</button>
+		</div>
+		<div class="row justify-content-center">
+			<div class="arrows"></div>
+			<button type="button" class="btn btn-primary" style="position: relative;">A BUTTON</button>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-primary">A BUTTON</button>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-primary">A BUTTON</button>
+		</div>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-primary">
+				<a href="https://bookmarker-9ac68.firebaseapp.com/">Bookmarker</a>
+			</button>
+		</div>
+	</div>
+
+	<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
+	<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
+	<!-- <div class="relative">
+		<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
+		<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
+	</div> -->
 </div>
-<div [@eggState]="state" (click)="onEgg()" class="half-circle-right"></div>
-<div [@eggState]="state" (click)="onEgg()" class="half-circle-left"></div>
+
+<div class="blob red"></div>
+
 <router-outlet></router-outlet>

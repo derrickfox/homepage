@@ -1,4 +1,65 @@
 body {
-    background-image: url('backImage.png'); 
+    background-image: url('backgroundRevised.png'); 
     background-size: cover;
+}
+
+#borderImage {
+    content: url('borderImage.png');
+    height: 500px;
+}
+
+.container {
+    height: 100%;
+}
+
+#leftCloud {
+    height: 180px;
+    content: url('montyCloudsLeft.png');
+}
+
+#rightCloud {
+    height: 180px;
+    float: right;
+    content: url('montyCloudsRight.png');
+}
+
+#darkCloudLeft {
+    content: url('darkCloudLeft.png');
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+
+#darkCloudRight {
+    content: url('darkCloudRight.png');
+    position: absolute;
+    height: 250px;
+    bottom: 0;
+    right: -100px;
+    float: right;
+}
+
+.half-sun-bottom {
+    /* width: 100px; */
+    height: 200px;
+    content: url('montySunLower.png');
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+.half-sun-top {
+    /* width: 100px; */
+    height: 200px;
+    content: url('montySunUpper.png');
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+.arrows {
+    content: url('arrows.png');
+    position: absolute;
+    left: 0;
 }

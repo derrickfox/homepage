@@ -1,17 +1,52 @@
-.half-circle-right {
-    width: 100px;
-    height: 200px;
-    background-color: gold;
-    border-top-right-radius: 110px;
-    border-bottom-right-radius: 110px;
-    border: 10px solid gray;
+#centerButtons {
+    position: absolute;
+    top: 100px;
+    left: 500px;
 }
 
-.half-circle-left {
-    width: 100px;
-    height: 200px;
-    background-color: gold;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 110px;
-    border: 10px solid gray;
+.relative {
+    position: relative;
+    width: auto;
+    align-items: center;
+    height: 300px;
+}
+
+button { 
+    font-family: MedievalSharp; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 24px; 
+}
+
+button > a {
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+/* .blob.red {
+    background: rgba(255, 82, 82, 1);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    animation: pulse-red 2s infinite;
+} */
+
+@keyframes pulse-red {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
 }
