@@ -63,3 +63,23 @@ body {
     position: absolute;
     left: 0;
 }
+
+.btn2Text {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 50px;
+}
+
+.btn2 {
+    background-image: url('buttonImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    font-family: MedievalSharp;
+    border: 0px solid black;
+    width: 250px;
+    height: 75px;
+}
