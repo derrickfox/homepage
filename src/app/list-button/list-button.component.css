@@ -1,0 +1,32 @@
+.list-button {
+    content: url('buttonImage.png');
+    transform: scaleX(0.4) scaleY(0.4);
+    position: absolute;
+}
+
+.button-text {
+    position: absolute;
+    font-family: MedievalSharp;
+    font-size: 100px;
+    font-style: normal;
+    margin-top: 4px;
+    top: 6px;
+    padding: 17px;
+}
+
+.btn2 {
+    background-image: url('buttonImage.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: MedievalSharp;
+    border: 0px solid black;
+    transform: scaleX(5) scaleY(3);
+    padding-bottom: 4px;
+    /* padding-top: 4px; */
+}
+
+.center {
+    position: absolute;
+    left: 200px;
+}
+

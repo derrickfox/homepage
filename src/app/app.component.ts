@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
+import { zoomInRightAnimation } from 'angular-animations';
 
 @Component({
 	selector: 'app-root',
@@ -75,7 +76,8 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 		])
 	]
 })
-export class AppComponent implements AfterViewInit{
+
+export class AppComponent implements AfterViewInit {
 	state = 'normal'
 	otherState = 'normal'
 	eggState = 'unhatched'
@@ -87,7 +89,7 @@ export class AppComponent implements AfterViewInit{
 	}
 
 	onEgg() {
-		console.log('egg')
+		console.log('egg');
 		this.eggState === 'unhatched' ? this.eggState = 'hatched' : this.eggState = 'unhatched';
 	}
 
@@ -98,5 +100,5 @@ export class AppComponent implements AfterViewInit{
 
 	ngAfterViewInit() {
 		this.cloudState = 'afterLoading';
-	 }
+	}
 }

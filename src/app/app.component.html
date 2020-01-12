@@ -3,6 +3,10 @@
 	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
 	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
 
+	<div class="justify-content-center d-flex">
+		<app-list-button></app-list-button>
+	</div>
+
 	<div class="d-flex justify-content-center">
 		<div class="relative">
 			<div [@topState]="eggState" (click)="onEgg()" class="half-sun-bottom"></div>
@@ -10,7 +14,7 @@
 		</div>
 	</div>
 
-	<div class="col-xs-12" id="centerButtons">
+	<!-- <div class="col-xs-12" id="centerButtons">
 		<div class="row justify-content-center">
 			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A BUTTON</button>
 		</div>
@@ -32,7 +36,7 @@
 				<a href="https://bookmarker-9ac68.firebaseapp.com/">Bookmarker</a>
 			</button>
 		</div>
-	</div>
+	</div> -->
 
 	<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
 	<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
@@ -40,6 +44,7 @@
 		<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
 		<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
 	</div> -->
+
 </div>
 
 <div class="blob red"></div>
