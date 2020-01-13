@@ -40,21 +40,21 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('leftTopCloudState', [
 			state('beforeLoading', style({
-				transform: 'translateX(-200px)'
+				transform: 'translateX(-500px)'
 			})),
 			state('afterLoading', style({
-				transform: 'translateX(10px)'
+				transform: 'translateX(-100px)'
 			})),
-			transition('beforeLoading <=> afterLoading', animate(600))
+			transition('beforeLoading <=> afterLoading', animate(1000))
 		]),
 		trigger('rightTopCloudState', [
 			state('beforeLoading', style({
-				transform: 'translateX(220px)'
+				transform: 'translateX(500px)'
 			})),
 			state('afterLoading', style({
-				transform: 'translateX(-10px)'
+				transform: 'translateX(100px)'
 			})),
-			transition('beforeLoading <=> afterLoading', animate(600))
+			transition('beforeLoading <=> afterLoading', animate(1000))
 		]),
 		trigger('leftBottomCloudState', [
 			state('beforeLoading', style({
@@ -63,7 +63,7 @@ import { zoomInRightAnimation } from 'angular-animations';
 			state('afterLoading', style({
 				transform: 'translateX(-200px)'
 			})),
-			transition('beforeLoading <=> afterLoading', animate(600))
+			transition('beforeLoading <=> afterLoading', animate(1000))
 		]),
 		trigger('rightBottomCloudState', [
 			state('beforeLoading', style({
@@ -72,7 +72,7 @@ import { zoomInRightAnimation } from 'angular-animations';
 			state('afterLoading', style({
 				transform: 'translateX(220px)'
 			})),
-			transition('beforeLoading <=> afterLoading', animate(600))
+			transition('beforeLoading <=> afterLoading', animate(1000))
 		]),
 		trigger('listState', [
 			state('shrunken', style({
@@ -104,15 +104,15 @@ export class AppComponent implements AfterViewInit {
 	buttons = [
 		{
 			title: 'First Button',
-			url: 'www.yahoo.com'
+			url: 'https://www.yahoo.com'
 		},
 		{
 			title: 'Second Button',
-			url: 'www.espn.com'
+			url: 'https://www.espn.com'
 		},
 		{
 			title: 'Third Button',
-			url: 'www.espn.com'
+			url: 'https://www.amazon.com'
 		}
 	]
 	title = 'homepage';

@@ -10,11 +10,15 @@ export class ListButtonComponent implements OnInit {
     title: string,
     url: string
   }
+  @Input() url: string;
 
   constructor() { }
 
   ngOnInit() {
     // this.title = 'Init'
+  }
+  linkClicked(item) {
+    this.url = item.url;
   }
 
 }
