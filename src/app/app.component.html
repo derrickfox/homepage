@@ -1,22 +1,11 @@
 <div class="container">
+	<div class="blob red"></div>
+
 	<img #borderImage>
 	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
 	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
 
-	<!-- <div class="justify-content-center d-flex">
-		<div style="position: relative;">
-			<div class="btn2" style="position: absolute; border: 1px solid red;">
-				Hello
-			</div>
-			<div class="btn2" style="position: absolute; border: 1px solid blue;">
-				Hello 2
-			</div>
-		</div>
-	</div> -->
-
-	<div class="btn2">
-		<div class="btn2Text">ETESF</div>
-	</div>
+	<app-list-button *ngFor="let buttonElement of buttons" [button]="buttonElement">{{buttonElement.title}}</app-list-button>
 
 	<div class="d-flex justify-content-center">
 		<div class="relative">
@@ -51,13 +40,7 @@
 
 	<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
 	<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
-	<!-- <div class="relative">
-		<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
-		<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">
-	</div> -->
 
 </div>
-
-<div class="blob red"></div>
 
 <router-outlet></router-outlet>

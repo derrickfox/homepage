@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
 import { zoomInRightAnimation } from 'angular-animations';
 
@@ -82,6 +82,20 @@ export class AppComponent implements AfterViewInit {
 	otherState = 'normal'
 	eggState = 'unhatched'
 	cloudState = 'beforeLoading'
+	@Input() button: {
+		title: 'Init',
+		url: 'dkjfa;'
+	}
+	buttons = [
+		{
+			title: 'First Button',
+			url: 'www.yahoo.com'
+		},
+		{
+			title: 'Second Button',
+			url: 'www.espn.com'
+		}
+	]
 	title = 'homepage';
 
 	onAnimate() {
