@@ -27,6 +27,12 @@ import { zoomInRightAnimation } from 'angular-animations';
 			state('hatched', style({
 				transform: 'rotate(-45deg)'
 			})),
+			state('shrunken', style({
+				transform: 'scale(0)'
+			})),
+			state('grown', style({
+				transform: 'scale(1)'
+			})),
 			transition('normal => hatched', animate(300))
 		]),
 		trigger('bottomState', [
@@ -82,6 +88,7 @@ export class AppComponent implements AfterViewInit {
 	otherState = 'normal'
 	eggState = 'unhatched'
 	cloudState = 'beforeLoading'
+	listState = 'shrunken'
 	@Input() button: {
 		title: 'Init',
 		url: 'dkjfa;'
@@ -94,6 +101,10 @@ export class AppComponent implements AfterViewInit {
 		{
 			title: 'Second Button',
 			url: 'www.espn.com'
+		},
+		{
+			title: 'Third Button',
+			url: 'www.espn.com'
 		}
 	]
 	title = 'homepage';
@@ -105,6 +116,7 @@ export class AppComponent implements AfterViewInit {
 	onEgg() {
 		console.log('egg');
 		this.eggState === 'unhatched' ? this.eggState = 'hatched' : this.eggState = 'unhatched';
+		this.listState === 'shrunken' ? this.listState = 'grown' : this.listState = 'shrunken';
 	}
 
 	onClouds() {
