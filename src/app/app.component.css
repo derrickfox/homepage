@@ -35,8 +35,13 @@ button:hover {
 }
 
 #theSunDiv {
-    height: 500px;
-    width: 500px;
+    height: 800px;
+    width: 80px;
+    position: absolute;
+}
+
+#listOfButtons {
+    right: 100px;
 }
 
 .pulse {

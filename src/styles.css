@@ -46,7 +46,7 @@ body {
     content: url('montySunLower.png');
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
 }
 
 .half-sun-top {
@@ -55,7 +55,7 @@ body {
     content: url('montySunUpper.png');
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
 }
 
 .arrows {
