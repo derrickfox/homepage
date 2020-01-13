@@ -79,24 +79,13 @@ import { zoomInRightAnimation } from 'angular-animations';
 				transform: 'translateX(0) scale(0)'
 			})),
 			state('grown', style({
-				transform: 'translateX(-200px)', 
-				opacity: 1
+				transform: 'translateX(-200px) scale(1)'
 			})),
-			transition('shrunken => grown', [
+			transition('shrunken <=> grown', [
 				style({ 
-					width: 10, 
-					transform: 'translateX(50px)', 
 					opacity: 0 
 				}),
-				group([
-					animate('0.3s 0.1s ease', style({
-						transform: 'translateX(-200px)',
-						width: 120
-					})),
-					animate('0.3s ease', style({
-						opacity: 1
-					}))
-				])
+				animate(500)
 			])
 		])
 	]
