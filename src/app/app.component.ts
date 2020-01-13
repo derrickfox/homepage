@@ -43,7 +43,8 @@ import { zoomInRightAnimation } from 'angular-animations';
 				transform: 'rotate(90deg)'
 			})),
 			state('afterLoading', style({
-				transform: 'rotate(0deg)'
+				transform: 'rotate(0deg)',
+				width: '200px'
 			})),
 			transition('* => afterLoading', animate(1600)),
 			transition('* => beforeLoading', animate(1600))
