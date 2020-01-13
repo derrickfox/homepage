@@ -76,7 +76,7 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('listState', [
 			state('shrunken', style({
-				transform: 'translateX(0) scale(0)'
+				transform: 'translateX(200px) scale(0)'
 			})),
 			state('grown', style({
 				transform: 'translateX(-200px) scale(1)'
