@@ -5,7 +5,7 @@
 	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
 	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
 
-	<div  [@topState]="listState" style="position: absolute;" id="listOfButtons">
+	<div [@listState]="listState" style="position: absolute;" id="listOfButtons">
 		<app-list-button *ngFor="let buttonElement of buttons" [button]="buttonElement">{{buttonElement.title}}</app-list-button>
 	</div>
 

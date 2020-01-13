@@ -27,12 +27,6 @@ import { zoomInRightAnimation } from 'angular-animations';
 			state('hatched', style({
 				transform: 'rotate(-45deg)'
 			})),
-			state('shrunken', style({
-				transform: 'scale(0)'
-			})),
-			state('grown', style({
-				transform: 'scale(1)'
-			})),
 			transition('normal => hatched', animate(300))
 		]),
 		trigger('bottomState', [
@@ -79,6 +73,28 @@ import { zoomInRightAnimation } from 'angular-animations';
 				transform: 'translateX(220px)'
 			})),
 			transition('beforeLoading <=> afterLoading', animate(600))
+		]),
+		trigger('listState', [
+			state('shrunken', style({
+				width: 120,
+				transform: 'translateX(0)', opacity: 1
+			})),
+			state('grown', style({
+				width: 120,
+				transform: 'translateX(100px)', opacity: 1
+			})),
+			transition('shrunken => grown', [
+				style({ width: 10, transform: 'translateX(50px)', opacity: 0 }),
+				group([
+					animate('0.3s 0.1s ease', style({
+						transform: 'translateX(200px)',
+						width: 120
+					})),
+					animate('0.3s ease', style({
+						opacity: 1
+					}))
+				])
+			])
 		])
 	]
 })
