@@ -35,9 +35,11 @@ button:hover {
 }
 
 #theSunDiv {
-    height: 800px;
-    width: 80px;
+    border: 2px solid red;
+    height: 400px;
+    width: 800px;
     position: absolute;
+    right: -300px;
 }
 
 #listOfButtons {

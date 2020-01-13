@@ -40,12 +40,13 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('sunState', [
 			state('beforeLoading', style({
-				transform: 'rotate(-270deg)'
+				transform: 'rotate(90deg)'
 			})),
 			state('afterLoading', style({
 				transform: 'rotate(0deg)'
 			})),
-			transition('afterLoading <=> beforeLoading', animate(1600))
+			transition('* => afterLoading', animate(1600)),
+			transition('* => beforeLoading', animate(1600))
 		]),
 		trigger('leftTopCloudState', [
 			state('beforeLoading', style({
@@ -104,7 +105,7 @@ export class AppComponent implements AfterViewInit {
 	state = 'normal'
 	otherState = 'normal'
 	eggState = 'unhatched'
-	sunState = 'beforeLoading'
+	sunState = 'afterLoading'
 	cloudState = 'beforeLoading'
 	listState = 'shrunken'
 	@Input() button: {
@@ -145,6 +146,6 @@ export class AppComponent implements AfterViewInit {
 
 	ngAfterViewInit() {
 		this.cloudState = 'afterLoading';
-		this.sunState = 'afterLoading';
+		// this.sunState = 'afterLoading';
 	}
 }
