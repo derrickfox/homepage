@@ -5,43 +5,18 @@
 	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
 	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
 
-
-	<div class="d-flex justify-content-center">
+	<div class="d-flex justify-content-center" [@sunState]="sunState">
 		<div class="relative">
 			<div [@listState]="listState" style="position: absolute;" id="listOfButtons">
 				<app-list-button *ngFor="let buttonElement of buttons" [button]="buttonElement">{{buttonElement.title}}
 				</app-list-button>
 			</div>
-			<div class="pulse">
+			<div class="pulse" id="theSunDiv">
 				<div [@topState]="eggState" (click)="onEgg()" class="half-sun-bottom"></div>
 				<div [@bottomState]="eggState" (click)="onEgg()" class="half-sun-top"></div>
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="col-xs-12" id="centerButtons">
-		<div class="row justify-content-center">
-			<button [@divState]="state" (click)="onAnimate()" type="button" class="btn btn-primary blob red">A BUTTON</button>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row justify-content-center">
-			<div class="arrows"></div>
-			<button type="button" class="btn btn-primary" style="position: relative;">A BUTTON</button>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary">A BUTTON</button>
-		</div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary">
-				<a href="https://bookmarker-9ac68.firebaseapp.com/">Bookmarker</a>
-			</button>
-		</div>
-	</div> -->
 
 	<img id="darkCloudLeft" (click)="onClouds()" [@leftBottomCloudState]="cloudState">
 	<img id="darkCloudRight" (click)="onClouds()" [@rightBottomCloudState]="cloudState">

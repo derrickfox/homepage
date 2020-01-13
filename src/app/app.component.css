@@ -34,6 +34,11 @@ button:hover {
     animation: pulse-red 2s infinite;
 }
 
+#theSunDiv {
+    height: 500px;
+    width: 500px;
+}
+
 .pulse {
     animation: pulse-red 2s infinite;
 }

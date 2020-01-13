@@ -38,6 +38,15 @@ import { zoomInRightAnimation } from 'angular-animations';
 			})),
 			transition('unhatched <=> hatched', animate(300))
 		]),
+		trigger('sunState', [
+			state('beforeLoading', style({
+				transform: 'rotate(-90deg)'
+			})),
+			state('afterLoading', style({
+				transform: 'rotate(0deg)'
+			})),
+			transition('beforeLoading <=> afterLoading', animate(600))
+		]),
 		trigger('leftTopCloudState', [
 			state('beforeLoading', style({
 				transform: 'translateX(-500px)'
@@ -95,6 +104,7 @@ export class AppComponent implements AfterViewInit {
 	state = 'normal'
 	otherState = 'normal'
 	eggState = 'unhatched'
+	sunState = 'beforeLoading'
 	cloudState = 'beforeLoading'
 	listState = 'shrunken'
 	@Input() button: {
@@ -103,8 +113,8 @@ export class AppComponent implements AfterViewInit {
 	}
 	buttons = [
 		{
-			title: 'First Button',
-			url: 'https://www.yahoo.com'
+			title: 'Bookmarker',
+			url: 'https://bookmarker-9ac68.firebaseapp.com/'
 		},
 		{
 			title: 'Second Button',
@@ -130,9 +140,11 @@ export class AppComponent implements AfterViewInit {
 	onClouds() {
 		console.log('cloud')
 		this.cloudState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
+		this.sunState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
 	}
 
 	ngAfterViewInit() {
 		this.cloudState = 'afterLoading';
+		this.sunState = 'afterLoading';
 	}
 }
