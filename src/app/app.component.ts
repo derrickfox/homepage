@@ -76,18 +76,21 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('listState', [
 			state('shrunken', style({
-				width: 120,
-				transform: 'translateX(0)', opacity: 1
+				transform: 'translateX(0) scale(0)'
 			})),
 			state('grown', style({
-				width: 120,
-				transform: 'translateX(100px)', opacity: 1
+				transform: 'translateX(-200px)', 
+				opacity: 1
 			})),
 			transition('shrunken => grown', [
-				style({ width: 10, transform: 'translateX(50px)', opacity: 0 }),
+				style({ 
+					width: 10, 
+					transform: 'translateX(50px)', 
+					opacity: 0 
+				}),
 				group([
 					animate('0.3s 0.1s ease', style({
-						transform: 'translateX(200px)',
+						transform: 'translateX(-200px)',
 						width: 120
 					})),
 					animate('0.3s ease', style({

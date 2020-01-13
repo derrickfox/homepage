@@ -5,12 +5,13 @@
 	<img id="leftCloud" (click)="onClouds()" [@leftTopCloudState]="cloudState">
 	<img id="rightCloud" (click)="onClouds()" [@rightTopCloudState]="cloudState">
 
-	<div [@listState]="listState" style="position: absolute;" id="listOfButtons">
-		<app-list-button *ngFor="let buttonElement of buttons" [button]="buttonElement">{{buttonElement.title}}</app-list-button>
-	</div>
+
 
 	<div class="d-flex justify-content-center">
 		<div class="relative">
+			<div [@listState]="listState" style="position: absolute;" id="listOfButtons">
+				<app-list-button *ngFor="let buttonElement of buttons" [button]="buttonElement">{{buttonElement.title}}</app-list-button>
+			</div>
 			<div [@topState]="eggState" (click)="onEgg()" class="half-sun-bottom"></div>
 			<div [@bottomState]="eggState" (click)="onEgg()" class="half-sun-top"></div>
 		</div>
