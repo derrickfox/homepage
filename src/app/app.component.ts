@@ -140,7 +140,7 @@ export class AppComponent implements AfterViewInit {
 	onClouds() {
 		console.log('cloud')
 		this.cloudState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
-		this.sunState === 'beforeLoading' ? this.cloudState = 'afterLoading' : this.cloudState = 'beforeLoading';
+		this.sunState === 'beforeLoading' ? this.sunState = 'afterLoading' : this.sunState = 'beforeLoading';
 	}
 
 	ngAfterViewInit() {
