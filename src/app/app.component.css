@@ -28,19 +28,29 @@ button:hover {
     animation: pulse-red 2s infinite;
 }
 
+#theSun {
+    border: 1px solid gold;
+    box-shadow: 0 0 0 0 gold;
+    animation: pulse-red 2s infinite;
+}
+
+.pulse {
+    animation: pulse-red 2s infinite;
+}
+
 @keyframes pulse-red {
     0% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+        /* box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); */
     }
     
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        /* box-shadow: 0 0 0 10px rgba(255, 215, 0, 1); */
     }
     
     100% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        /* box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); */
     }
 }
