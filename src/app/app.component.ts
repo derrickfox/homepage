@@ -87,14 +87,14 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('listState', [
 			state('shrunken', style({
-				transform: 'translateX(200px) scale(0)'
+				transform: 'translateX(0px) scale(0)'
 			})),
 			state('grown', style({
 				transform: 'translateX(-200px) scale(1)'
 			})),
 			transition('shrunken <=> grown', [
 				style({ 
-					opacity: 0 
+					// transform: 'translateX(0)'
 				}),
 				animate(500)
 			])

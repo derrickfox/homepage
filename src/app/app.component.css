@@ -43,7 +43,8 @@ button:hover {
 }
 
 #listOfButtons {
-    right: 100px;
+    /* right: 100px; */
+    left: 0px;
 }
 
 .pulse {
