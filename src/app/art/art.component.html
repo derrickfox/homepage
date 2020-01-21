@@ -1,21 +1,20 @@
-<div class="container" style="align-items: center;">
-    <img src="../../assets/images/Untitled_Artwork 1.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 10.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 11.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 12.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 13.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 14.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 15.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 16.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 17.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 18.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 19.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 20.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 21.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 22.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 23.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 5.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 7.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 8.png"><br>
-    <img src="../../assets/images/Untitled_Artwork 9.png"><br>
+<!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>  -->
+
+<!-- <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="myImg">
 </div>
+<img (click)="pictureClicked(images[0].path)" id="myImg" [src]="images[0].path"> -->
+
+<div class="container" style="align-items: center;">
+    <div *ngFor="let image of images" class="artContainer">
+        <img [src]="image.path" class="artImage">
+    </div>
+</div>
+
