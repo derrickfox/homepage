@@ -1,10 +1,10 @@
 body {
-    background-image: url('backgroundRevised.png'); 
+    background-image: url('./assets/images/backgroundRevised.png'); 
     background-size: cover;
 }
 
 #borderImage {
-    content: url('borderImage.png');
+    content: url('./assets/images/borderImage.png');
     height: 500px;
 }
 
@@ -14,17 +14,17 @@ body {
 
 #leftCloud {
     height: 180px;
-    content: url('montyCloudsLeft.png');
+    content: url('./assets/images/montyCloudsLeft.png');
 }
 
 #rightCloud {
     height: 180px;
     float: right;
-    content: url('montyCloudsRight.png');
+    content: url('./assets/images/montyCloudsRight.png');
 }
 
 #darkCloudLeft {
-    content: url('darkCloudLeft.png');
+    content: url('./assets/images/darkCloudLeft.png');
     height: 250px;
     position: absolute;
     bottom: 0;
@@ -32,7 +32,7 @@ body {
 }
 
 #darkCloudRight {
-    content: url('darkCloudRight.png');
+    content: url('./assets/images/darkCloudRight.png');
     position: absolute;
     height: 250px;
     bottom: 0;
@@ -43,7 +43,7 @@ body {
 .half-sun-bottom {
     /* width: 100px; */
     height: 200px;
-    content: url('montySunLower.png');
+    content: url('./assets/images/montySunLower.png');
     position: absolute;
     top: 0px;
     right: 0px;
@@ -52,14 +52,14 @@ body {
 .half-sun-top {
     /* width: 100px; */
     height: 200px;
-    content: url('montySunUpper.png');
+    content: url('./assets/images/montySunUpper.png');
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
 .arrows {
-    content: url('arrows.png');
+    content: url('./assets/images/arrows.png');
     position: absolute;
     left: 0;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .btn2 {
-    background-image: url('buttonImage.png');
+    background-image: url('./assets/images/buttonImage.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: MedievalSharp;
