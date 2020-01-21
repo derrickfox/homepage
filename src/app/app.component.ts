@@ -40,14 +40,14 @@ import { zoomInRightAnimation } from 'angular-animations';
 		]),
 		trigger('sunState', [
 			state('beforeLoading', style({
-				transform: 'rotate(90deg)'
+				transform: 'rotate(90deg)',
+				marginTop: '400px',
 			})),
 			state('afterLoading', style({
 				transform: 'rotate(0deg)',
 				width: '200px'
 			})),
-			transition('* => afterLoading', animate(1600)),
-			transition('* => beforeLoading', animate(1600))
+			transition('beforeLoading <=> afterLoading', animate(1600))
 		]),
 		trigger('leftTopCloudState', [
 			state('beforeLoading', style({
