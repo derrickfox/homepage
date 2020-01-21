@@ -119,12 +119,12 @@ export class HomepageComponent implements AfterViewInit {
 			url: 'https://bookmarker-9ac68.firebaseapp.com/'
 		},
 		{
-			title: 'Second Button',
-			url: 'https://www.espn.com'
+			title: 'Art',
+			url: '/art'
 		},
 		{
-			title: 'Third Button',
-			url: 'https://www.amazon.com'
+			title: 'Resume',
+			url: '/resume'
 		}
 	]
 	title = 'homepage';
