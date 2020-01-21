@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ListButtonComponent } from './list-button/list-button.component';
 import { ArtComponent } from './art/art.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListButtonComponent,
     ArtComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

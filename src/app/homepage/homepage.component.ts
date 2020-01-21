@@ -123,8 +123,8 @@ export class HomepageComponent implements AfterViewInit {
 			url: '/art'
 		},
 		{
-			title: 'Resume',
-			url: '/resume'
+			title: 'About',
+			url: '/about'
 		}
 	]
 	title = 'homepage';

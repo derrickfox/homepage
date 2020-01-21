@@ -1,8 +1,24 @@
+#artBackgroundDiv {
+  background-color: rgb(135, 48, 57);
+  width: 100%;
+  height: auto;
+}
+
 .artContainer {
-    border: 1px solid red;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 25%;
+}
+
+/* .artContainer:first-child {
+	border: 2px black solid;
+} */
+
+.artContainer:hover {
+	transform: scale(1.2);
 }
 
 .artImage {
