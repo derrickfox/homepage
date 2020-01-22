@@ -1,10 +1,3 @@
-
-#contactSlide {
-    background-color: rgb(136, 47, 55);
-    width: 190%;
-    height: auto;
-}
-
 #meContainer {
     width: 100%;
     height: auto;
@@ -43,6 +36,10 @@
     bottom: -150px;  
     /* animation: shake 0.5s;
     animation-iteration-count: infinite; */
+}
+
+#contactSlide {
+    top: 300px;
 }
 
 #story {

@@ -13,7 +13,7 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 			state('clicked', style({
 
 			})),
-			transition('unclicked <=> clicked', 
+			transition('unclicked => clicked', 
 			animate(1300, keyframes([
 				style({transform: 'translate(1px, 1px) rotateY(0)', offset: 0}),
 				style({transform: 'translate(-1px, -2px) rotateY(0)', offset: 0.10}),
@@ -29,20 +29,20 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 			])))
 		]),
 		trigger('contactSlide', [
-			state('unclicked', style({
+			state('in', style({
 				transform: 'translateX(-1000px) scaleY(0.4)'
 			})),
-			state('clicked', style({
+			state('out', style({
 				transform: 'translateX(-200px) scaleY(0.4)'
 			})),
-			transition('unclicked <=> clicked',
+			transition('in <=> out',
 			animate(300))
 		])
 	]
 })
 export class AboutComponent implements OnInit {
 	envelopeState = 'unclicked';
-	contactSlide = 'unclicked';
+	contactSlide = 'in';
 	constructor() { }
 
 	ngOnInit() {
@@ -50,8 +50,8 @@ export class AboutComponent implements OnInit {
 
 	onEnvelopeClick() {
 		console.log('envelope clicked');
-		this.envelopeState === 'unclicked' ? this.envelopeState = 'clicked' : this.envelopeState = 'unclicked';
-		this.contactSlide === 'unclicked' ? this.contactSlide = 'clicked' : this.contactSlide = 'unclicked';
+		this.envelopeState = 'clicked';
+		this.contactSlide === 'in' ? this.contactSlide = 'out' : this.contactSlide = 'in';
 	}
 
 }

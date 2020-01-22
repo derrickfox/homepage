@@ -107,11 +107,8 @@
             </div>
         </table>
     </div>
-    <div [@contactSlide]="contactSlide" style="position: relative;">
-        <div id="contactSlide">
-            <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
-            <h1 style="position: absolute;">FKDLS:DKLSDK</h1> 
-        </div>
+    <div id="contactSlide" [@contactSlide]="contactSlide" style="position: absolute;">
+        <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
     </div>
     <div id="scroll"></div>
 </div>
