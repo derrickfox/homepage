@@ -2,10 +2,16 @@
     <div id="me">
         <img id="me" src="../../assets/images/me.jpeg">
         <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="envelope" src="../../assets/images/envelope.png">
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="font-size: 20px;">{{envelopeState}}</p>
     </div>
-    <h1 style="padding-left: 300px;">{{envelopeState}}</h1>
 
-    <div id="scroll">
-
+    <div style="position: absolute;" id="story" class="storyFont">
+        <table style="width: auto;">
+            <th><h2>Once upon a time...</h2></th>
+            <tr><td>NCATS</td><td>2010-2019</td></tr>
+        </table>
     </div>
+    <div id="scroll"></div>
 </div>
