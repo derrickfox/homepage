@@ -1,59 +1,104 @@
 <div id="meContainer">
     <div id="me">
         <img id="me" src="../../assets/images/me.jpeg">
-        <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="envelope" src="../../assets/images/envelope.png">
-        
+        <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="envelope"
+            src="../../assets/images/envelope.png">
+
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <p style="font-size: 20px;">{{envelopeState}}</p>
     </div>
 
     <div style="position: absolute;" id="story" class="storyFont">
-        <table style="width: auto;">
-            <th><h2>Once upon a time...</h2></th>
-            <tr><td>NCATS</td><td>2010-2019</td></tr>
-            <tr><td>Axle Informatics</td></tr>
-            <tr><td>Full Stack Web Developer</td></tr>
+        <table style="transform: scaleX(0.8);">
+            <th>
+                <h2>Once upon a time...</h2>
+            </th>
+            <tr>
+                <h3 style="float: left;">NIH / NCATS</h3>
+                <h3 style="float: right; padding-right: 10%">09/2016 - 12/2019</h3>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Axle Informatics</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Full Stack Web Developer</h4>
+                </td>
+            </tr>
+            <h5>Conversion of current applications from AngularJS to Angular 5.</h5>
             <ul>
-                <h5>Conversion of current applications from AngularJS to Angular 5.</h5>
                 <li>Created observables for better data handling such as item search and dashboard items.</li>
                 <li>Created services for the management of items in the inventory and instrumentation systems.</li>
                 <ul>
                     <li>Programmed new APIs to retrieve data from Mongo and SharePoint.</li>
                 </ul>
                 <li>Implemented a new UI design and layout.</li>
-                <h5>Started a new project for NCATS project tracking. This is a full MEAN stack application from the ground up.</h5>
-                <li>Designed to corral information from across all NCATS proposed and ongoing projects into a singular repository.</li>
-                <li>Implemented new user requested widgets such as a dynamic project timeline component and approval workflows.</li>
             </ul>
-            <tr><td>NCATS</td><td>2010-2016</td></tr>
-            <tr><td>Axle Informatics</td></tr>
-            <tr><td>Web Developer</td></tr>
-            <h5>Further development of NCATS inventory and instrumentation systems.</h5>
+            <h5 style="padding-right: 15%;">Started a new project for NCATS project tracking. This is a full MEAN stack application from the ground
+                up.</h5>
             <ul>
-                <li>Began the conversion of the inventory system to AngularJS.</li>
-                <li>Constructed custom and reusable directives. Directives were constructed for searching items, displaying items in custom dashboards, show/hiding DOM elements based on logged in user’s role and more.</li>
-                <li>Created a role-based access system. Such system limits the users’ experience predicated on their assigned role in the system.</li>
-                <li>Developed a custom dashboard and filter. The user could drill down into their search by selecting from checkboxes. This made for rapid and intuitive searching.</li>
+                <li>Designed to corral information from across all NCATS proposed and ongoing projects into a singular
+                    repository.</li>
+                <li>Implemented new user requested widgets such as a dynamic project timeline component and approval
+                    workflows.</li>
             </ul>
+            <tr>
+                <h3 style="float: left;">NIH / NCATS</h3>
+                <h3 style="float: right; padding-right: 10%">10/2015 - 09/2016</h3>
+            </tr>
+            <tr>
+                <td><h4>Axle Informatics</h4></td>
+            </tr>
+            <tr>
+                <td><h4>Web Developer</h4></td>
+            </tr>
+            <h5>Further development of NCATS inventory and instrumentation systems.</h5>
+            <div style="padding-right: 10%;">
+                <ul>
+                    <li>Began the conversion of the inventory system to AngularJS.</li>
+                    <li>Constructed custom and reusable directives. Directives were constructed for searching items,
+                        displaying items in custom dashboards, show/hiding DOM elements based on logged in user’s role and
+                        more.</li>
+                    <li>Created a role-based access system. Such system limits the users’ experience predicated on their
+                        assigned role in the system.</li>
+                    <li>Developed a custom dashboard and filter. The user could drill down into their search by selecting
+                        from checkboxes. This made for rapid and intuitive searching.</li>
+                </ul>
+            </div>
+
             <h5>Developed a Jira platform for reporting bugs.</h5>
             <ul>
                 <li>First at NCATS to begin using their Jira system for logging project activities and workflows.</li>
                 <li>Had to first teach myself Jira and then teach Jira to the staff.</li>
             </ul>
-            <tr><td>NCATS</td><td>2010-2016</td></tr>
-            <tr><td>Axle Informatics</td></tr>
-            <tr><td>Web Developement Intern</td></tr>
+            <tr>
+                <h3 style="float: left;">NIH / NCATS</h3>
+                <h3 style="float: right; padding-right: 10%">09/2015 - 10/2015</h3>
+            </tr>
+            <tr>
+                <td><h4>Axle Informatics</h4></td>
+            </tr>
+            <tr>
+                <td><h4>Web Developement Intern</h4></td>
+            </tr>
             <h5>Developed a SharePoint based instrumentation and consumables inventory system.</h5>
             <ul>
-                <li>NCATS has over a thousand pieces of laboratory and medical equipment spread across multiple locations, buildings and rooms. They also have many consumables such as laboratory supplies and protein reagents that need to be ordered and inventoried upon their reception.</li>
-                <li>The system uses the unique identifier of the NIH inventory barcode to track the location of each piece of equipment and consumable. This system made it easy to find either a specific items or even types of types of items spread out across the three NCATS locations.</li>
+                <li>NCATS has over a thousand pieces of laboratory and medical equipment spread across multiple
+                    locations, buildings and rooms. They also have many consumables such as laboratory supplies and
+                    protein reagents that need to be ordered and inventoried upon their reception.</li>
+                <li>The system uses the unique identifier of the NIH inventory barcode to track the location of each
+                    piece of equipment and consumable. This system made it easy to find either a specific items or even
+                    types of types of items spread out across the three NCATS locations.</li>
             </ul>
-            <h4>Education</h4>
-            <h5>American University, School of International Service: Washington, DC</h5>
-            <h6>Bachelor of Arts (BA) in International Relations</h6>
-            <br>
-            <h5>Montgomery College: Rockville, MD</h5>
-            <h6>Associates of Web Programming (AA) and Associates of Computer Science (AA)</h6>
+            <div style="padding-left: 5%;">
+                <h4>Education</h4>
+                <h5>American University, School of International Service: Washington, DC</h5>
+                <h6>Bachelor of Arts (BA) in International Relations</h6>
+                <h5>Montgomery College: Rockville, MD</h5>
+                <h6>Associates of Web Programming (AA) and Associates of Computer Science (AA)</h6>
+            </div>
         </table>
     </div>
     <div id="scroll"></div>
