@@ -1,8 +1,15 @@
 <div id="meContainer">
     <div id="me">
         <img id="me" src="../../assets/images/me.jpeg">
-        <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="envelope"
+        <div *ngIf="envelopeState === 'unclicked'">
+            <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="unclickedEnvelope"
             src="../../assets/images/envelope.png">
+        </div>
+        <div *ngIf="envelopeState !== 'unclicked'">
+            <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="clickedEnvelope"
+            src="../../assets/images/envelope.png">
+        </div>
+
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <p style="font-size: 20px;">{{envelopeState}}</p>
