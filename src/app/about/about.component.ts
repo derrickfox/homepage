@@ -8,7 +8,7 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 	animations: [
 		trigger('envelopeState', [
 			state('unclicked', style({
-
+				
 			})),
 			state('clicked', style({
 
@@ -27,11 +27,22 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 				style({transform: 'translate(1px, 2px) rotateY(0)', offset: 0.90}),
 				style({transform: 'translate(1px, -2px) rotateY(0)', offset: 1})
 			])))
+		]),
+		trigger('contactSlide', [
+			state('unclicked', style({
+				transform: 'translateX(-1000px) scaleY(0.4)'
+			})),
+			state('clicked', style({
+				transform: 'translateX(0px) scaleY(0.4)'
+			})),
+			transition('unclicked <=> clicked',
+			animate(300))
 		])
 	]
 })
 export class AboutComponent implements OnInit {
 	envelopeState = 'unclicked';
+	contactSlide = 'unclicked';
 	constructor() { }
 
 	ngOnInit() {
@@ -40,6 +51,7 @@ export class AboutComponent implements OnInit {
 	onEnvelopeClick() {
 		console.log('envelope clicked');
 		this.envelopeState === 'unclicked' ? this.envelopeState = 'clicked' : this.envelopeState = 'unclicked';
+		this.contactSlide === 'unclicked' ? this.contactSlide = 'clicked' : this.contactSlide = 'unclicked';
 	}
 
 }
