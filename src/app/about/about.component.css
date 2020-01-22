@@ -1,9 +1,17 @@
 
+#contactSlide {
+    background-color: rgb(136, 47, 55);
+    width: 190%;
+    height: auto;
+}
+
 #meContainer {
     width: 100%;
     height: auto;
     padding: 20px;
     background-color: rgb(136, 47, 55);
+    border: 12px solid rgb(206, 147, 137);
+    border-radius: 2%;
 }
 
 #me {

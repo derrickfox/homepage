@@ -9,17 +9,13 @@
             <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="clickedEnvelope"
             src="../../assets/images/envelope.png">
         </div>
-        <div [@contactSlide]="contactSlide">
-            <img src="../../assets/images/sideScroll.webp">
-        </div>
 
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p style="font-size: 20px;">{{envelopeState}}</p>
     </div>
 
     <div style="position: absolute;" id="story" class="storyFont">
+
         <table style="transform: scaleX(0.8);">
+            <tr><td>&nbsp;</td></tr>
             <th>
                 <h2>Once upon a time...</h2>
             </th>
@@ -110,6 +106,12 @@
                 <h6>Associates of Web Programming (AA) and Associates of Computer Science (AA)</h6>
             </div>
         </table>
+    </div>
+    <div [@contactSlide]="contactSlide" style="position: relative;">
+        <div id="contactSlide">
+            <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
+            <h1 style="position: absolute;">FKDLS:DKLSDK</h1> 
+        </div>
     </div>
     <div id="scroll"></div>
 </div>

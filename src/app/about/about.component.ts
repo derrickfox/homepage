@@ -33,7 +33,7 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 				transform: 'translateX(-1000px) scaleY(0.4)'
 			})),
 			state('clicked', style({
-				transform: 'translateX(0px) scaleY(0.4)'
+				transform: 'translateX(-200px) scaleY(0.4)'
 			})),
 			transition('unclicked <=> clicked',
 			animate(300))
