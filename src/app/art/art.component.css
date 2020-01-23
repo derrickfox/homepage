@@ -7,8 +7,13 @@
 .artContainer {
     border: 1px solid black;
     margin-left: 50%;
-    margin-right: 50%;
-    width: 25%;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.artContainer:last-child {
+	margin-bottom: 0px;
+	padding-bottom: 10px;
 }
 
 /* .artContainer:first-child {
