@@ -107,9 +107,13 @@
         </table>
     </div>
     <div id="contactSlide" [@contactSlide]="contactSlide" style="position: absolute;">  
-        <h1 id="emailCard">Email!</h1>      
-        <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
-        <img class="arrows" src="../../assets/images/arrows.png"> 
+        <h1 id="emailCard">Email!</h1> 
+        <div>
+            <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
+        </div>
+        <div>
+            <img class="arrows" src="../../assets/images/arrows.png"> 
+        </div>
     </div>
     <div id="scroll"></div>
 </div>

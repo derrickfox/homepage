@@ -115,7 +115,7 @@ export class HomepageComponent implements AfterViewInit {
 	}
 	buttons = [
 		{
-			title: 'Bookmarker',
+			title: 'Bookmarker App',
 			url: 'https://bookmarker-9ac68.firebaseapp.com/'
 		},
 		{

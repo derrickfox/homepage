@@ -17,6 +17,7 @@ export class ListButtonComponent implements OnInit {
   ngOnInit() {
     // this.title = 'Init'
   }
+  
   linkClicked(item) {
     this.url = item.url;
   }
