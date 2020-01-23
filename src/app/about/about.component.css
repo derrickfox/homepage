@@ -38,6 +38,35 @@
     animation-iteration-count: infinite; */
 }
 
+.arrows {
+    position: absolute;
+    top: 100px;
+}
+
+.arrows:hover {
+    transform: translateX(50px);
+}
+
+#emailCard {
+    right: 0px;
+}
+
+#backButton {
+    position: absoulte; 
+    float: right;
+    font-family: MedievalSharp; 
+    background-color: rgb(174, 97, 96);
+    color: rgb(226, 204, 197);
+    border-color: rgb(136, 47, 55);
+    margin-top: 25px;
+    margin-right: 25px;
+    border-radius: 20%;
+}
+
+#backButton:hover {
+    transform: scale(1.2);
+}
+
 #contactSlide {
     top: 300px;
 }

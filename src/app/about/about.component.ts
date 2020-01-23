@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate, group, keyframes } from '@angular/animations';
 
 @Component({
@@ -43,9 +44,13 @@ import { trigger, state, style, transition, animate, group, keyframes } from '@a
 export class AboutComponent implements OnInit {
 	envelopeState = 'unclicked';
 	contactSlide = 'in';
-	constructor() { }
+	constructor(private router: Router) { }
 
 	ngOnInit() {
+	}
+
+	backButton() {
+		this.router.navigate(['/homepage']);
 	}
 
 	onEnvelopeClick() {

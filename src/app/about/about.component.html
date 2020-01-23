@@ -1,3 +1,6 @@
+<button id="backButton" (click)="backButton()" class="btn btn-primary">BACK</button>
+
+
 <div id="meContainer">
     <div id="me">
         <img id="me" src="../../assets/images/me.jpeg">
@@ -13,12 +16,8 @@
     </div>
 
     <div style="position: absolute;" id="story" class="storyFont">
-
+        <h3 style="padding-left: 50px; padding-top: 20px; transform: scaleX(0.93)">Tales of a web developer...</h3>
         <table style="transform: scaleX(0.8);">
-            <tr><td>&nbsp;</td></tr>
-            <th>
-                <h2>Once upon a time...</h2>
-            </th>
             <tr>
                 <h3 style="float: left;">NIH / NCATS</h3>
                 <h3 style="float: right; padding-right: 10%">09/2016 - 12/2019</h3>
@@ -107,8 +106,10 @@
             </div>
         </table>
     </div>
-    <div id="contactSlide" [@contactSlide]="contactSlide" style="position: absolute;">
+    <div id="contactSlide" [@contactSlide]="contactSlide" style="position: absolute;">  
+        <h1 id="emailCard">Email!</h1>      
         <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
+        <img class="arrows" src="../../assets/images/arrows.png"> 
     </div>
     <div id="scroll"></div>
 </div>
