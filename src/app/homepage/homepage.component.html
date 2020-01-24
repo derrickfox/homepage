@@ -9,7 +9,9 @@
 	<div class="d-flex justify-content-center">
 		<div class="relative">
 			<div [@listState]="listState" style="position: absolute;" id="listOfButtons">
-				<app-list-button *ngFor="let buttonElement of buttons" [routerLink]="buttonElement.url" [button]="buttonElement">{{buttonElement.title}}</app-list-button>
+				<a href="https://bookmarker-9ac68.firebaseapp.com/"><button class="btn2"><p class="btn2Text">Bookmarker App</p></button></a>
+				<app-list-button appExternalUrl *ngFor="let buttonElement of buttons" [routerLink]="buttonElement.url"
+					[button]="buttonElement">{{buttonElement.title}}</app-list-button>
 			</div>
 			<div class="pulse" id="theSunDiv" [@sunState]="sunState">
 				<div [@topState]="eggState" (click)="onEgg()" class="half-sun-bottom"></div>

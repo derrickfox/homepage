@@ -109,15 +109,12 @@ export class HomepageComponent implements AfterViewInit {
 	sunState = 'afterLoading'
 	cloudState = 'beforeLoading'
 	listState = 'shrunken'
+	customButton = { title: 'Bookmarker App', }
 	@Input() button: {
 		title: 'Init',
 		url: 'dkjfa;'
 	}
 	buttons = [
-		{
-			title: 'Bookmarker App',
-			url: 'https://bookmarker-9ac68.firebaseapp.com/'
-		},
 		{
 			title: 'Art',
 			url: '/art'

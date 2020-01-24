@@ -11,9 +11,8 @@
     <img class="modal-content" id="myImg">
 </div>
 <img (click)="pictureClicked(images[0].path)" id="myImg" [src]="images[0].path"> -->
+<button id="backButton" (click)="backButton()" class="btn btn-primary">BACK</button>
 
 <div id="artBackgroundDiv">
-    <div *ngFor="let image of images" class="artContainer" style="align-items: center;">
-        <img [src]="image.path" class="artImage">
-    </div>
+    <img *ngFor="let image of images" [src]="image.path" class="artImage">
 </div>

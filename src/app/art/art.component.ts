@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-art',
@@ -76,7 +77,7 @@ export class ArtComponent implements OnInit {
 	]
 
 
-	constructor() { }
+	constructor(private router: Router) { }
 
 	ngOnInit() {
 		console.log('art loaded');
@@ -87,6 +88,10 @@ export class ArtComponent implements OnInit {
 		console.log('this.modal', this.modal)
 		this.modal.style.display = "block";
 		// this.modalImg.src = src;
+	}
+
+	backButton() {
+		this.router.navigate(['/homepage']);
 	}
 
 }

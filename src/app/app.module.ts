@@ -8,6 +8,8 @@ import { ListButtonComponent } from './list-button/list-button.component';
 import { ArtComponent } from './art/art.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ExternalUrlDirectiveDirective } from './external-url-directive.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AboutComponent } from './about/about.component';
     ListButtonComponent,
     ArtComponent,
     HomepageComponent,
-    AboutComponent
+    AboutComponent,
+    NotFoundComponent,
+    ExternalUrlDirectiveDirective
   ],
   imports: [
     BrowserModule,
