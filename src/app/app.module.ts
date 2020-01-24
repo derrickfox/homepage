@@ -8,7 +8,6 @@ import { ListButtonComponent } from './list-button/list-button.component';
 import { ArtComponent } from './art/art.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ListButtonComponent,
     ArtComponent,
     HomepageComponent,
-    AboutComponent,
-    NotFoundComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
