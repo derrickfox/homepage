@@ -51,6 +51,18 @@
     right: 0px;
 }
 
+.custom-button {
+    font-family: MedievalSharp; 
+    background-color: rgb(174, 97, 96);
+    color: rgb(226, 204, 197);
+    border-color: rgb(136, 47, 55);
+    border-radius: 20%;
+}
+
+.custom-button:hover {
+    transform: scale(1.2);
+}
+
 #backButton {
     position: absoulte; 
     float: right;

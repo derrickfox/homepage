@@ -9,12 +9,12 @@
             src="../../assets/images/envelope.png">
         </div>
         <div *ngIf="envelopeState !== 'unclicked'">
+            <a href="../../assets/Derrick Fox's Resume 2020.docx"><button style="position: absolute; left: 0px; top: 370px;" class="btn btn-primary custom-button">Resume Word Format</button></a><br>
+            <a href="../../assets//Derrick Fox's Resume 2020.pdf"><button style="position: absolute; left: 0px; top: 420px;" class="btn btn-primary custom-button">Resume PDF Format</button></a>
             <img (click)="onEnvelopeClick()" [@envelopeState]="envelopeState" id="clickedEnvelope"
             src="../../assets/images/envelope.png">
         </div>
-
     </div>
-
     <div style="position: absolute;" id="story" class="storyFont">
         <h3 style="padding-left: 50px; padding-top: 20px; transform: scaleX(0.93)">Tales of a web developer...</h3>
         <table style="transform: scaleX(0.8);">
@@ -111,9 +111,6 @@
         <div>
             <img style="position: absolute;" (click)="onEnvelopeClick()" src="../../assets/images/sideScroll.webp">
         </div>
-        <!-- <div>
-            <img class="arrows" src="../../assets/images/arrows.png"> 
-        </div> -->
         <div style="border: 2px solid red; position: relative">
             <div style="position: absolute; bottom: -300px">
                 <br>
